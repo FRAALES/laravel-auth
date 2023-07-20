@@ -20,6 +20,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/guest/home', [GuestController::class, 'index'])
-    ->name('guest.');
+    ->name('guest.index');
 
 require __DIR__ . '/auth.php';
